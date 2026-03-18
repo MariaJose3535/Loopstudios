@@ -1,0 +1,30 @@
+<header class="absolute w-full flex justify-between items-center p-6 text-white z-50">
+  <h1 class="text-xl font-bold">loopstudios</h1>
+
+  <nav class="hidden md:flex gap-6">
+    <a href="#">About</a>
+    <a href="#">Careers</a>
+    <a href="#">Events</a>
+    <a href="#">Products</a>
+    <a href="#">Support</a>
+  </nav>
+
+  <button id="menuBtn" class="md:hidden">☰</button>
+</header>
+
+<div id="mobileMenu" class="hidden fixed inset-0 bg-black text-white flex flex-col items-center justify-center gap-6 text-2xl">
+  <a href="#">About</a>
+  <a href="#">Careers</a>
+  <a href="#">Events</a>
+  <a href="#">Products</a>
+  <a href="#">Support</a>
+</div>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn?.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
